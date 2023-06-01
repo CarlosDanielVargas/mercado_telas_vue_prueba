@@ -1,18 +1,46 @@
+<script setup>
+import CategoryPost from "@/components/CategoryPost.vue";
+
+</script>
+import CategoryPost from "./components/CategoryPost.vue";
+export default {
+  name: 'App',
+  components: {
+    CategoryPost,
+  }
+}
+<script>
+
+</script>
+
 <template>
-  <div>
-
+<div id="app">
+    <header>
+      <div class="wrapper">
+        <CategoryPost />
+      </div>
+    </header>
   </div>
-
 </template>
 
-<script>
-import axios from "axios";
-export default {
-  name: "App",
+<style scoped>
+header {
+  line-height: 1.5;
+}
 
-  async mounted() {
-    let results = await axios.get("http://0.0.0.0:3000/categories");
-    console.log(results);
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
   }
-};
-</script>
+
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+</style>

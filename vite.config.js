@@ -11,5 +11,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/vue3-example-railsAPI/'
+  base: '/mercado_telas_vue_prueba/'
 })

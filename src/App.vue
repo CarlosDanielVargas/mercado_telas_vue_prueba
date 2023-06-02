@@ -2,7 +2,7 @@
 import CategoryPost from "@/components/CategoryPost.vue";
 
 </script>
-import CategoryPost from "./components/CategoryPost.vue";
+import CategoryPost from "@/components/CategoryPost.vue";
 export default {
   name: 'App',
   components: {
